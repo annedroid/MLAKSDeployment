@@ -18,7 +18,7 @@ The application flow for this architecture is as follows:
 An example app that consumes the results is included with the scenario.
 
 ## Prerequisites
-1. Linux(Ubuntu).
+1. Windows DSVM or DLVM (can be done on Ubuntu DSVM as originally documented).
 2. [Anaconda Python](https://www.anaconda.com/download)
 3. [Docker](https://docs.docker.com/v17.12/install/linux/docker-ee/ubuntu) installed.
 4. [DockerHub](https://hub.docker.com/) account.
