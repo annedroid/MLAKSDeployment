@@ -28,7 +28,52 @@ The original tutorial was developed on an [Azure Ubuntu
 DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro),
 which addresses the first three prerequisites. I have modified it using the Windows DLVM (Deep Learning Virtual Machine).
 
-## Setup
+## Windows Setup
+
+To set up your environment to run notebooks, please follow these steps. They setup the notebooks to use Docker and Azure.
+
+1. Create or spin up your existing _Windows_ DSVM/DLVM.
+2. From the Azure portal, click _Connect_ to download your RDP (remote desktop) settings file. Click _Connect_.
+3. From the DSVM/DLVM, open a bash (bash for Windows) shell, and enter:
+   '''
+   sudo usermod -a -G docker <login>
+   '''
+   logout and log back in
+   
+   this will enter your login to the 'docker' group - verify this command was successful using the command 'groups'
+   '''
+   groups
+   '''
+4. Login to dockerhub account
+   '''
+   docker login
+   '''
+5. Clone, fork, or download the zip file for this repo:
+   '''
+   git clone https://github.com/annedroid/MLAKSDeployment.git
+  
+   '''
+6. Create the Python MLAKSDeployment virtual environment using the environment.yml:
+   ```
+   conda env create -f environment.yml
+   ```
+7. Activate the virtual environment:
+   ```
+   source activate MLAKSDeployment
+   ```
+8. Login to Azure:
+   ```
+   az login
+   ```
+9. If you have more than one Azure subscription, select it:
+   ```
+   az account set --subscription <Your Azure Subscription>
+   ```
+10. Start the Jupyter notebook server in the virtual environment:
+   ```
+   jupyter notebook
+   ```
+## Linux Setup
 To set up your environment to run these notebooks, please follow these steps.  They setup the notebooks to use Docker and Azure seamlessly.
 1. Create a _Linux_ DSVM.(If you already have a DSVM or DLVM, you can use it as well) - Make sure it is spun up and all updates are patched.
 2. In a bash shell on the DSVM, add your login to the `docker` group:
