@@ -1,6 +1,7 @@
-### Authors: Fidan Boylu Uz and Mario Bourgoin
+### Original Authors: Fidan Boylu Uz and Mario Bourgoin
+#### Modified for What the Hack by Laura Edell 
 
-# Deploying Python models on a Kubernetes Cluster for real-time scoring
+# Deploying ML models on a Kubernetes Cluster for real-time scoring
 
 ## Overview
 This scenario shows how to deploy a Frequently Asked Questions (FAQ) matching model as a web service to provide predictions for user questions. For this scenario, “Input Data” in the architecture diagram refers to text strings containing the user questions to match with a list of FAQs. The scenario is designed for the Scikit-Learn machine learning library for Python but can be generalized to any scenario that uses Python models to make real-time predictions.
@@ -23,13 +24,13 @@ An example app that consumes the results is included with the scenario.
 4. [DockerHub](https://hub.docker.com/) account.
 5. [Azure account](https://azure.microsoft.com).
 
-The tutorial was developed on an [Azure Ubuntu
+The original tutorial was developed on an [Azure Ubuntu
 DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro),
-which addresses the first three prerequisites.
+which addresses the first three prerequisites. I have modified it using the Windows DLVM (Deep Learning Virtual Machine).
 
 ## Setup
 To set up your environment to run these notebooks, please follow these steps.  They setup the notebooks to use Docker and Azure seamlessly.
-1. Create a _Linux_ DSVM.
+1. Create a _Linux_ DSVM.(If you already have a DSVM or DLVM, you can use it as well) - Make sure it is spun up and all updates are patched.
 2. In a bash shell on the DSVM, add your login to the `docker` group:
    ```
    sudo usermod -a -G docker <login>
