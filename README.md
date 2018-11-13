@@ -1,4 +1,4 @@
-### Original Authors: Fidan Boylu Uz and Mario Bourgoin
+
 #### Modified for What the Hack by Laura Edell 
 
 # Deploying ML models on a Kubernetes Cluster for real-time scoring
@@ -76,6 +76,7 @@ After following the setup instructions above, run the Jupyter notebooks in order
 To remove the conda environment created see [here](https://conda.io/docs/commands/env/conda-env-remove.html). The last Jupyter notebook also gives details on deleting Azure resources associated with this repository.
 
 # Contributing
+### Original Authors: Fidan Boylu Uz and Mario Bourgoin
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
