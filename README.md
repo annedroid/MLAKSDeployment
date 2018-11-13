@@ -115,7 +115,7 @@ To set up your environment to run these notebooks, please follow these steps.  T
    ```
 
 ## Steps
-After following the setup instructions above, run the Jupyter notebooks in order starting with [Data Prep Notebook](https://github.com/Azure/MLAKSDeployment/blob/master/00_Data_Prep.ipynb).
+After following the setup instructions above, run the Jupyter notebooks in order starting with [Data Prep Notebook](https://github.com/annedroid/MLAKSDeployment/blob/master/00_Data_Prep.ipynb).
 
 ## Cleaning up
 To remove the conda environment created see [here](https://conda.io/docs/commands/env/conda-env-remove.html). The last Jupyter notebook also gives details on deleting Azure resources associated with this repository.
